@@ -1,0 +1,346 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  list-style: none;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  font-family: Helvetica Neue, Helvetica, Tahoma, Arial, STXihei, "华文细黑", SimSun, "宋体", Heiti, "黑体", sans-serif !important;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body,
+html {
+  width: 100%;
+  min-height: 100%;
+}
+body {
+  position: relative;
+  line-height: 1;
+}
+img {
+  object-fit: fill;
+  object-position: center center;
+}
+a,
+a:focus,
+a:active {
+  text-decoration: none;
+}
+.clear:after {
+  display: block;
+  content: "clear";
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.tx-c {
+  text-align: center;
+}
+.tx-l {
+  text-align: left;
+}
+.tx-r {
+  text-align: right;
+}
+.btn {
+  display: inline-block;
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
+.page-award {
+  width: 100%;
+  background-color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 4rem;
+}
+.page-award .banner {
+  height: 15.067rem;
+}
+.page-award .banner img {
+  display: block;
+  width: 100%;
+}
+.page-award .bg-white {
+  width: 9.56rem;
+  height: 9.56rem;
+  background-color: white;
+  margin: 0 auto;
+  box-shadow: 0 0 0.52rem 0 #a6a6a6;
+  position: relative;
+}
+.page-award .bg-white .deng {
+  width: 9.06667rem;
+  height: 9.06667rem;
+  background-color: #9c7e25;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.page-award .bg-white .deng img {
+  width: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.page-award .bg-white .deng img.changeposition {
+  width: 98%;
+  left: 0.09333rem;
+  top: 0.09333rem;
+}
+.page-award #lottery {
+  width: 8.36rem;
+  height: 8.36rem;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: url('../img/brown-bg.png') center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding: 0.067rem 0 0 0.067rem;
+}
+.page-award #lottery table {
+  border-spacing: 0.19rem;
+}
+.page-award #lottery table td {
+  height: 2.493333rem;
+  width: 2.493333rem;
+  position: relative;
+}
+.page-award #lottery table td.hand {
+  cursor: pointer;
+}
+.page-award #lottery table td img {
+  display: block;
+  width: 100%;
+}
+.page-award #lottery table td a {
+  display: block;
+  text-decoration: none;
+}
+.page-award #lottery table td.active .mask {
+  display: block;
+}
+.page-award #lottery table td .mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: transparent;
+  display: none;
+  box-shadow: 0 0 0.2133rem 2px #413919;
+}
+.page-award .getAward {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(86, 86, 86, 0.6);
+}
+.page-award .getAward .modal-tips {
+  padding-top: 0.64rem;
+  width: 7.8667rem;
+  background-color: #fff;
+  border-radius: 0.10667rem;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.page-award .getAward .modal-tips .tips {
+  font-size: 0.32rem;
+  text-align: center;
+  color: #b2943c;
+  margin-bottom: 0.26667rem;
+}
+.page-award .getAward .modal-tips .tips_pic {
+  padding-top: 0.08rem;
+  text-align: center;
+  margin-bottom: 0.26rem;
+}
+.page-award .getAward .modal-tips .tips_pic img {
+  display: block;
+  width: 5.51rem;
+  margin: 0 auto;
+}
+.page-award .getAward .modal-tips .tips-gray {
+  font-size: 0.266667rem;
+  color: #858484;
+  width: 7.05333rem;
+  margin: 0 auto;
+  line-height: 0.42667rem;
+}
+.page-award .getAward .modal-tips .mobile-valid {
+  border-top: 1px solid #b2943c;
+  padding: 0.466667rem 0.72rem 1.2rem;
+  background-color: #eeeeee;
+  border-radius: 0 0 0.10666rem 0.10666rem;
+}
+.page-award .getAward .modal-tips .mobile-valid p {
+  height: 1.01333rem;
+  color: #9c9c9c;
+  margin-bottom: 0.4rem;
+}
+.page-award .getAward .modal-tips .mobile-valid p input {
+  width: 100%;
+  border: 1px solid #9c9c9c;
+  height: 1.01333rem;
+  padding-left: 0.4rem;
+  font-size: 0.32rem;
+}
+.page-award .getAward .modal-tips .mobile-valid p .immediate-submit {
+  width: 100%;
+  height: 1.12rem;
+  background-color: #b2943c;
+  line-height: 1.12rem;
+  text-align: center;
+  color: #fff;
+  border-radius: 0.13333rem;
+  padding-left: 0;
+  font-size: 0.64rem;
+}
+.page-award .getAward .modal-tips .mobile-valid p:nth-last-child(1) {
+  margin-bottom: 0px;
+}
+.page-award .getAward .modal-tips .mobile-valid p.getAward-title {
+  font-size: 0.48rem;
+  height: 0.86667rem;
+  color: #555555;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.page-award .getAward .close {
+  position: absolute;
+  top: 0.16rem;
+  right: 0.16rem;
+  cursor: pointer;
+}
+.page-award .modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(86, 86, 86, 0.6);
+}
+.page-award .modal .modal-tips {
+  padding-top: 0.64rem;
+  width: 7.8667rem;
+  background-color: #fff;
+  border-radius: 0.10667rem;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.page-award .modal .modal-tips .tips {
+  font-size: 0.32rem;
+  text-align: center;
+  color: #b2943c;
+  margin-bottom: 0.26666rem;
+}
+.page-award .modal .modal-tips .tips_pic {
+  padding-top: 0.08rem;
+  text-align: center;
+  margin-bottom: 0.77333rem;
+}
+.page-award .modal .modal-tips .tips_pic img {
+  display: block;
+  width: 5.51rem;
+  margin: 0 auto;
+}
+.page-award .modal .modal-tips .mobile-valid {
+  border-top: 1px solid #b2943c;
+  padding: 0.466667rem 0.72rem 1.2rem;
+  background-color: #eeeeee;
+  border-radius: 0 0 0.10666rem 0.10666rem;
+}
+.page-award .modal .modal-tips .mobile-valid p {
+  height: 1.01333rem;
+  color: #9c9c9c;
+  margin-bottom: 0.4rem;
+}
+.page-award .modal .modal-tips .mobile-valid p input {
+  width: 100%;
+  border: 1px solid #9c9c9c;
+  height: 1.01333rem;
+  padding-left: 0.4rem;
+  font-size: 0.32rem;
+}
+.page-award .modal .modal-tips .mobile-valid p #validateCode {
+  width: 65%;
+  margin-right: 0.13rem;
+}
+.page-award .modal .modal-tips .mobile-valid p .verifyBtn {
+  background-color: #e5e5e5;
+  color: #9c9c9c;
+  width: 31%;
+  padding-left: 0px;
+  color: #896d17;
+}
+.page-award .modal .modal-tips .mobile-valid p .immediateGet {
+  width: 100%;
+  height: 1.12rem;
+  background-color: #b2943c;
+  line-height: 1.12rem;
+  text-align: center;
+  color: #fff;
+  border-radius: 0.13333rem;
+  padding-left: 0;
+  font-size: 0.64rem;
+}
+.page-award .modal .modal-tips .mobile-valid p:nth-last-child(1) {
+  margin-bottom: 0px;
+}
+.page-award .modal .modal-tips .mobile-valid p.getAward-title {
+  font-size: 0.21333rem;
+  color: #555555;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.page-award .modal .close {
+  position: absolute;
+  top: 0.16rem;
+  right: 0.16rem;
+  cursor: pointer;
+}
+.page-award .footer {
+  padding-bottom: 0.66667rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+.page-award .footer img {
+  display: block;
+  width: 100%;
+}
+.page-award .bottom-dark {
+  width: 100%;
+  height: 0.66667rem;
+  background-color: #7f7f7f;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
