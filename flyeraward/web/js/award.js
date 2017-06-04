@@ -71,6 +71,7 @@ function roll() {
 var click = false;
 
 $(function () {
+    var arr = [0,1,2,5,8,7,6,3];
     lottery.init('lottery');
     $("#lottery .award_jean").click(function(){
         if (click) {//click控制一次抽奖过程中不能重复点击抽奖按钮，后面的点击不响应
@@ -78,7 +79,7 @@ $(function () {
         }else{
             lottery.speed=100;
             roll();    //转圈过程不响应click事件，会将click置为false
-            lottery.stop(0);
+            lottery.stop(arr[parseInt(Math.random()* arr.length)]);
             click=true; //一次抽奖完成后，设置click为true，可继续抽奖
             return false;
         }
